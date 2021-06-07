@@ -1,0 +1,1 @@
+{"version":3,"file":"video-upload.module.d.ts","sources":["video-upload.module.d.ts"],"names":[],"mappings":";;;;;AAAA;;;AACA","sourcesContent":["export declare class VideoUploadModule {\r\n}\r\n"]}

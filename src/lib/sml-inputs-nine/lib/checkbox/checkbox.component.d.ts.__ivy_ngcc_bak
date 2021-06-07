@@ -1,0 +1,20 @@
+import { OnInit, EventEmitter, ElementRef } from '@angular/core';
+export declare class CheckboxComponent implements OnInit {
+    private elementRef;
+    value: any;
+    name: any;
+    label: string;
+    labeltext: string;
+    style: any;
+    switchStyle: any;
+    borderStyle: any;
+    signalStyle: boolean;
+    valueStyle: any;
+    checkboxStyle: any;
+    getvalue: EventEmitter<any>;
+    constructor(elementRef: ElementRef);
+    ngOnInit(): void;
+    ngOnChanges(event: any): void;
+    getTicFontSize(css: any): string;
+    onChange(event: any): void;
+}

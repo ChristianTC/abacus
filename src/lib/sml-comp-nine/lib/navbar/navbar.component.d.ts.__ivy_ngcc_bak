@@ -1,0 +1,7 @@
+import { OnInit } from '@angular/core';
+export declare class NavbarComponent implements OnInit {
+    iswelcome: any;
+    navStyle: any;
+    constructor();
+    ngOnInit(): void;
+}

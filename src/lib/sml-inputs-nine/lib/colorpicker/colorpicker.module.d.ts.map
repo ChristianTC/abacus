@@ -1,0 +1,1 @@
+{"version":3,"file":"colorpicker.module.d.ts","sources":["colorpicker.module.d.ts"],"names":[],"mappings":";;;;;AAAA;;;AACA","sourcesContent":["export declare class ColorPickersModule {\r\n}\r\n"]}

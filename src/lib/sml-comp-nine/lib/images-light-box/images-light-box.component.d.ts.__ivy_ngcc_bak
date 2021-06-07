@@ -1,0 +1,34 @@
+import { OnInit, EventEmitter } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+export declare class ImagesLightBoxComponent implements OnInit {
+    private http;
+    apiURL: any;
+    fileurl: string;
+    database: string;
+    FilesGroupId: any;
+    fileResponse: EventEmitter<any>;
+    body: any;
+    allowFiles: any;
+    GenericToken: any;
+    imagesData: any;
+    error_message: any;
+    percentDone: number;
+    uploadSuccess: boolean;
+    httpOptionJSON: {
+        headers: HttpHeaders;
+    };
+    slideIndex: any;
+    slideDescription: any;
+    constructor(http: HttpClient);
+    ngOnInit(): void;
+    getToken(): void;
+    getListdata(): void;
+    getFileType(url: any): "Image" | "Text" | "Audio" | "Video" | "Pdf" | "Csv" | "Doc" | "Ppt" | "Xls" | "File";
+    uploadAndProgress(files: File[]): void;
+    deleteFIles(value: any, index: any): void;
+    openModal(): void;
+    closeModal(): void;
+    plusSlides(n: any): void;
+    currentSlide(n: any): void;
+    showSlides(n: any): void;
+}

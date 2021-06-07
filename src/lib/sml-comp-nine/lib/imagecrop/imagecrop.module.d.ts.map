@@ -1,0 +1,1 @@
+{"version":3,"file":"imagecrop.module.d.ts","sources":["imagecrop.module.d.ts"],"names":[],"mappings":";;;;;AAAA;;;AACA","sourcesContent":["export declare class ImagecropModule {\r\n}\r\n"]}

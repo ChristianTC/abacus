@@ -1,0 +1,26 @@
+import { OnInit, EventEmitter } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+export declare class ImageUploadBoxComponent implements OnInit {
+    private http;
+    apiURL: any;
+    fileurl: string;
+    database: string;
+    FilesGroupId: any;
+    FileId: any;
+    fileResponse: EventEmitter<any>;
+    allowFiles: any;
+    GenericToken: any;
+    imagesData: any;
+    isLoading: any;
+    error_message: any;
+    percentDone: number;
+    httpOptionJSON: {
+        headers: HttpHeaders;
+    };
+    constructor(http: HttpClient);
+    ngOnInit(): void;
+    getToken(): void;
+    getListdata(): void;
+    uploadAndProgress(files: File[]): void;
+    deleteFIles(value: any): void;
+}

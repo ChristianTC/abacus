@@ -1,0 +1,1 @@
+{"version":3,"file":"tag-input.module.d.ts","sources":["tag-input.module.d.ts"],"names":[],"mappings":";;;;AAAA;;;AACA","sourcesContent":["export declare class TagInputModule {\r\n}\r\n"]}

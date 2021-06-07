@@ -1,0 +1,1 @@
+{"version":3,"file":"crop-image-upload.module.d.ts","sources":["crop-image-upload.module.d.ts"],"names":[],"mappings":";;;;;;AAAA;;;AACA","sourcesContent":["export declare class CropImageUploadModule {\r\n}\r\n"]}

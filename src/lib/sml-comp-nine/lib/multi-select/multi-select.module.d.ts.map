@@ -1,0 +1,1 @@
+{"version":3,"file":"multi-select.module.d.ts","sources":["multi-select.module.d.ts"],"names":[],"mappings":";;;;;;AAAA;;;AACA","sourcesContent":["export declare class MultiSelectModule {\r\n}\r\n"]}

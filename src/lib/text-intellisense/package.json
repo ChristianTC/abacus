@@ -1,0 +1,59 @@
+{
+  "_from": "http://www.aaadev.info/npm/text-intellisense-0.0.1.tgz",
+  "_id": "text-intellisense@0.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-g/fgdQGWdrus7ZydR7XxHKK0L7f74VPenpfcJPGvRxkr3GSwwUBt/u9SeamZuzhEBHMwdnMNnQRfpnVL2zFmuQ==",
+  "_location": "/text-intellisense",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "http://www.aaadev.info/npm/text-intellisense-0.0.1.tgz",
+    "rawSpec": "http://www.aaadev.info/npm/text-intellisense-0.0.1.tgz",
+    "saveSpec": "http://www.aaadev.info/npm/text-intellisense-0.0.1.tgz",
+    "fetchSpec": "http://www.aaadev.info/npm/text-intellisense-0.0.1.tgz"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://www.aaadev.info/npm/text-intellisense-0.0.1.tgz",
+  "_shasum": "8c8541b74d99ceb10e693af3b841884dd94842e0",
+  "_spec": "http://www.aaadev.info/npm/text-intellisense-0.0.1.tgz",
+  "_where": "D:\\Angular\\9\\Abacus3",
+  "bundleDependencies": false,
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "deprecated": false,
+  "description": "This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.6.",
+  "es2015_ivy_ngcc": "__ivy_ngcc__/fesm2015/text-intellisense.js",
+  "es2015": "fesm2015/text-intellisense.js",
+  "esm2015": "esm2015/text-intellisense.js",
+  "fesm2015_ivy_ngcc": "__ivy_ngcc__/fesm2015/text-intellisense.js",
+  "fesm2015": "fesm2015/text-intellisense.js",
+  "main": "bundles/text-intellisense.umd.js",
+  "metadata": "text-intellisense.metadata.json",
+  "module_ivy_ngcc": "__ivy_ngcc__/fesm2015/text-intellisense.js",
+  "module": "fesm2015/text-intellisense.js",
+  "name": "text-intellisense",
+  "peerDependencies": {
+    "@angular/common": "^10.0.6",
+    "@angular/core": "^10.0.6",
+    "angular-text-input-autocomplete": "^0.4.1",
+    "keyboardevent-key-polyfill": "^1.1.0"
+  },
+  "sideEffects": false,
+  "typings": "text-intellisense.d.ts",
+  "version": "0.0.1",
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by NGCC. This is not allowed.\\nPlease delete and rebuild the package, without compiling with NGCC, before attempting to publish.\\nNote that NGCC may have been run by importing this package into another project that is being built with Ivy enabled.\\n')\" && exit 1"
+  },
+  "__processed_by_ivy_ngcc__": {
+    "es2015": "10.1.6",
+    "esm2015": "10.1.6",
+    "fesm2015": "10.1.6",
+    "main": "10.1.6",
+    "module": "10.1.6",
+    "typings": "10.1.6"
+  }
+}

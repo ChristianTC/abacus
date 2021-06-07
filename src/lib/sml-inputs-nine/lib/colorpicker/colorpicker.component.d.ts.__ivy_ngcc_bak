@@ -1,0 +1,24 @@
+import { EventEmitter, ElementRef } from '@angular/core';
+export declare class ColorPickerComponent {
+    private elementRef;
+    heading: string;
+    color: string;
+    isLabel: any;
+    switchStyle: any;
+    label: string;
+    style: any;
+    valueStyle: any;
+    signalStyle: boolean;
+    staticStyle: boolean;
+    borderStyle: any;
+    event: EventEmitter<string>;
+    selectedColor: EventEmitter<any>;
+    show: boolean;
+    defaultColors: string[];
+    constructor(elementRef: ElementRef);
+    ngOnChanges(event: any): void;
+    styleObject(): Object;
+    changeColor(color: string): void;
+    changeColorManual(color: string): void;
+    toggleColors(): void;
+}

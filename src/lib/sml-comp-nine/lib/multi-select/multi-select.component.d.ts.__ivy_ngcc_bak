@@ -1,0 +1,40 @@
+import { OnInit, EventEmitter, ElementRef } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+export declare class MultiSelectComponent implements OnInit {
+    private http;
+    private elementRef;
+    dropdownList: any;
+    selectedItems: any;
+    label: any;
+    searchString: any;
+    getvalue: EventEmitter<any>;
+    GenericToken: any;
+    database: any;
+    schema: any;
+    procedure: any;
+    body: any;
+    fieldName: any;
+    fieldId: any;
+    apiURL: any;
+    style: any;
+    borderStyle: any;
+    valueStyle: any;
+    signalStyle: boolean;
+    staticStyle: boolean;
+    switchStyle: boolean;
+    httpOptionJSON: {
+        headers: HttpHeaders;
+    };
+    constructor(http: HttpClient, elementRef: ElementRef);
+    ngOnInit(): void;
+    ngOnChanges(event: any): void;
+    getToken(): void;
+    getDrpData(): void;
+    onItemSelect(item: any): void;
+    OnItemDeSelect(item: any): void;
+    onSelectAll(items: any): void;
+    onDeSelectAll(items: any): void;
+    isOpen: any;
+    onOpen(): void;
+    onClose(): void;
+}

@@ -1,0 +1,24 @@
+import { OnInit, EventEmitter } from '@angular/core';
+export declare class ButtongroupComponent implements OnInit {
+    obj: {
+        label: string;
+        dropdownButtons: any[];
+    };
+    buttonGroupStyle: any;
+    buttonGroupLabelStyle: any;
+    buttonGroupValueStyle: any;
+    actionClick: EventEmitter<any>;
+    hoverAnchor: any;
+    constructor();
+    ngOnInit(): void;
+    getHoverStyle(): {
+        'background-color': string;
+        'color': any;
+        'border-left': string;
+        'font-family': any;
+        'font-size': any;
+        'font-weight': any;
+        'cursor': string;
+    };
+    clickMethod(event: any): void;
+}

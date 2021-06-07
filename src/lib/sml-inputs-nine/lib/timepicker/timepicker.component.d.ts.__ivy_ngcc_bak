@@ -1,0 +1,21 @@
+import { OnInit, ElementRef, EventEmitter } from '@angular/core';
+export declare class DatetimepickerComponent implements OnInit {
+    private elementRef;
+    time: any;
+    name: any;
+    width: any;
+    label: string;
+    switchStyle: boolean;
+    style: any;
+    borderStyle: any;
+    valueStyle: any;
+    signalStyle: boolean;
+    staticStyle: boolean;
+    getvalue: EventEmitter<any>;
+    constructor(elementRef: ElementRef);
+    ngOnInit(): void;
+    ngAfterViewInit(): void;
+    ngOnChanges(event: any): void;
+    selectChanged(event: any): void;
+    onBlurMethod(): void;
+}

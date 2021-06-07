@@ -1,0 +1,15 @@
+import { OnInit, EventEmitter, ElementRef } from '@angular/core';
+export declare class CreditCardNewComponent implements OnInit {
+    private elementRef;
+    labelStyle: any;
+    borderStyle: any;
+    valueStyle: any;
+    buttonStyle: any;
+    cardObject: any;
+    submitValue: EventEmitter<any>;
+    constructor(elementRef: ElementRef);
+    ngOnInit(): void;
+    ngAfterViewInit(): void;
+    ngOnChanges(event: any): void;
+    submitClick(): void;
+}

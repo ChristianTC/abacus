@@ -1,0 +1,24 @@
+import { OnInit, ElementRef, EventEmitter } from '@angular/core';
+export declare class NumericComponent implements OnInit {
+    private elementRef;
+    jsonData: any;
+    name: any;
+    value: any;
+    options: any;
+    label: string;
+    readOnly: any;
+    style: any;
+    borderStyle: any;
+    switchStyle: boolean;
+    signalStyle: boolean;
+    staticStyle: boolean;
+    valueStyle: any;
+    getvalue: EventEmitter<any>;
+    onblur: EventEmitter<any>;
+    constructor(elementRef: ElementRef);
+    ngOnInit(): void;
+    ngOnChanges(event: any): void;
+    clickEvent(data: any): void;
+    getValue(event: any): void;
+    onBlur(event: any): void;
+}

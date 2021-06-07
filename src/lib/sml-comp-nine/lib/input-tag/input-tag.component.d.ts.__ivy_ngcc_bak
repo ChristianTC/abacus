@@ -1,0 +1,19 @@
+import { OnInit, EventEmitter, ElementRef } from '@angular/core';
+export declare class InputTagComponent implements OnInit {
+    private elementRef;
+    label: any;
+    name: any;
+    items: any;
+    getvalue: EventEmitter<any>;
+    switchStyle: boolean;
+    signalStyle: boolean;
+    staticStyle: boolean;
+    style: any;
+    borderStyle: any;
+    valueStyle: any;
+    constructor(elementRef: ElementRef);
+    ngOnInit(): void;
+    ngOnChanges(event: any): void;
+    onItemAdded(event: any): void;
+    onItemRemove(event: any): void;
+}

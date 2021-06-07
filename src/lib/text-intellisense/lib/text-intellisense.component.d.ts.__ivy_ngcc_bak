@@ -1,0 +1,45 @@
+import { OnInit, EventEmitter, ElementRef } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+export declare class TextIntellisenseComponent implements OnInit {
+    private elementRef;
+    private http;
+    Id: string;
+    Name: string;
+    LabelName: string;
+    TabIndex: number;
+    Type: string;
+    Maxlength: number;
+    Value: string;
+    Rows: number;
+    TriggerCharacter: string;
+    LabelStyle: any;
+    BorderStyle: any;
+    ValueStyle: any;
+    ReadOnly: boolean;
+    Disabled: boolean;
+    LabelTop: boolean;
+    database: any;
+    schema: any;
+    procedure: any;
+    fieldName: any;
+    apiURL: any;
+    GetValue: EventEmitter<any>;
+    BlurValue: EventEmitter<any>;
+    randKey: number;
+    showList: boolean;
+    listData: any;
+    GenericToken: any;
+    leftCss: string;
+    httpOptionJSON: {
+        headers: HttpHeaders;
+    };
+    constructor(elementRef: ElementRef, http: HttpClient);
+    ngOnInit(): void;
+    ngOnChanges(event: any): void;
+    GetValueEvent(event: any): void;
+    OnBlurEvent(event: any): void;
+    getToken(): void;
+    getGlobalField(): void;
+    findChoices: (searchText: string) => any;
+    getChoiceLabel: (choice: string) => string;
+}

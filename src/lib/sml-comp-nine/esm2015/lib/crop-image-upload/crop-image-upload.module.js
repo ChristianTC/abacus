@@ -1,0 +1,23 @@
+import { __decorate } from "tslib";
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { CropImageUploadComponent } from './crop-image-upload.component';
+import { ImageCropperModule } from 'ngx-image-cropper';
+let CropImageUploadModule = class CropImageUploadModule {
+};
+CropImageUploadModule = __decorate([
+    NgModule({
+        declarations: [CropImageUploadComponent],
+        imports: [
+            CommonModule,
+            FormsModule,
+            HttpClientModule,
+            ImageCropperModule
+        ],
+        exports: [CropImageUploadComponent]
+    })
+], CropImageUploadModule);
+export { CropImageUploadModule };
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY3JvcC1pbWFnZS11cGxvYWQubW9kdWxlLmpzIiwic291cmNlUm9vdCI6Im5nOi8vc21sLWNvbXAtbmluZS8iLCJzb3VyY2VzIjpbImxpYi9jcm9wLWltYWdlLXVwbG9hZC9jcm9wLWltYWdlLXVwbG9hZC5tb2R1bGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLE9BQU8sRUFBRSxRQUFRLEVBQUUsTUFBTSxlQUFlLENBQUM7QUFDekMsT0FBTyxFQUFFLFlBQVksRUFBRSxNQUFNLGlCQUFpQixDQUFDO0FBQy9DLE9BQU8sRUFBRSxXQUFXLEVBQUUsTUFBTSxnQkFBZ0IsQ0FBQztBQUM3QyxPQUFPLEVBQUUsZ0JBQWdCLEVBQUUsTUFBTSxzQkFBc0IsQ0FBQztBQUN4RCxPQUFPLEVBQUUsd0JBQXdCLEVBQUUsTUFBTSwrQkFBK0IsQ0FBQztBQUN6RSxPQUFPLEVBQUUsa0JBQWtCLEVBQUUsTUFBTSxtQkFBbUIsQ0FBQztBQWF2RCxJQUFhLHFCQUFxQixHQUFsQyxNQUFhLHFCQUFxQjtDQUFJLENBQUE7QUFBekIscUJBQXFCO0lBWGpDLFFBQVEsQ0FBQztRQUNULFlBQVksRUFBRSxDQUFDLHdCQUF3QixDQUFDO1FBQ3hDLE9BQU8sRUFBRTtZQUNSLFlBQVk7WUFDWixXQUFXO1lBQ1gsZ0JBQWdCO1lBQ2hCLGtCQUFrQjtTQUNsQjtRQUNELE9BQU8sRUFBRSxDQUFDLHdCQUF3QixDQUFDO0tBQ25DLENBQUM7R0FFVyxxQkFBcUIsQ0FBSTtTQUF6QixxQkFBcUIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBOZ01vZHVsZSB9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xyXG5pbXBvcnQgeyBDb21tb25Nb2R1bGUgfSBmcm9tICdAYW5ndWxhci9jb21tb24nO1xyXG5pbXBvcnQgeyBGb3Jtc01vZHVsZSB9IGZyb20gJ0Bhbmd1bGFyL2Zvcm1zJztcclxuaW1wb3J0IHsgSHR0cENsaWVudE1vZHVsZSB9IGZyb20gJ0Bhbmd1bGFyL2NvbW1vbi9odHRwJztcclxuaW1wb3J0IHsgQ3JvcEltYWdlVXBsb2FkQ29tcG9uZW50IH0gZnJvbSAnLi9jcm9wLWltYWdlLXVwbG9hZC5jb21wb25lbnQnO1xyXG5pbXBvcnQgeyBJbWFnZUNyb3BwZXJNb2R1bGUgfSBmcm9tICduZ3gtaW1hZ2UtY3JvcHBlcic7XHJcblxyXG5ATmdNb2R1bGUoe1xyXG5cdGRlY2xhcmF0aW9uczogW0Nyb3BJbWFnZVVwbG9hZENvbXBvbmVudF0sXHJcblx0aW1wb3J0czogW1xyXG5cdFx0Q29tbW9uTW9kdWxlLFxyXG5cdFx0Rm9ybXNNb2R1bGUsXHJcblx0XHRIdHRwQ2xpZW50TW9kdWxlLFxyXG5cdFx0SW1hZ2VDcm9wcGVyTW9kdWxlXHJcblx0XSxcclxuXHRleHBvcnRzOiBbQ3JvcEltYWdlVXBsb2FkQ29tcG9uZW50XVxyXG59KVxyXG5cclxuZXhwb3J0IGNsYXNzIENyb3BJbWFnZVVwbG9hZE1vZHVsZSB7IH0iXX0=

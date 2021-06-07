@@ -1,0 +1,19 @@
+import { OnInit, EventEmitter, ElementRef } from '@angular/core';
+export declare class RadioComponent implements OnInit {
+    private elementRef;
+    id: any;
+    jsonData: any;
+    value: any;
+    label: any;
+    switchStyle: any;
+    labelStyle: any;
+    borderStyle: any;
+    valueStyle: any;
+    radioStyle: any;
+    signalStyle: boolean;
+    radioChangeHandler: EventEmitter<any>;
+    constructor(elementRef: ElementRef);
+    ngOnInit(): void;
+    ngOnChanges(event: any): void;
+    changeevt1: (event: any) => void;
+}

@@ -1,0 +1,47 @@
+{
+  "_from": "file:..\\Library\\rich-text-editor-0.0.1.tgz",
+  "_id": "rich-text-editor@0.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-LGMbx/oJOh4wC0paf5+8h5pG8XmrxqNcq9N1xWJEK4a8dfhA+SUHfjqhDwzvVB3pOlf0ctD5Otos+BaY35KzAg==",
+  "_location": "/emuna-text-editor",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "file",
+    "where": "D:\\Angular\\9\\Abacus3",
+    "raw": "emuna-text-editor@file:../Library/rich-text-editor-0.0.1.tgz",
+    "name": "emuna-text-editor",
+    "escapedName": "emuna-text-editor",
+    "rawSpec": "file:../Library/rich-text-editor-0.0.1.tgz",
+    "saveSpec": "file:..\\Library\\rich-text-editor-0.0.1.tgz",
+    "fetchSpec": "D:\\Angular\\9\\Library\\rich-text-editor-0.0.1.tgz"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "D:\\Angular\\9\\Library\\rich-text-editor-0.0.1.tgz",
+  "_shasum": "cdf34c73cc7096424d13a8512f2489422ee41a5d",
+  "_spec": "emuna-text-editor@file:../Library/rich-text-editor-0.0.1.tgz",
+  "_where": "D:\\Angular\\9\\Abacus3",
+  "bundleDependencies": false,
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "deprecated": false,
+  "description": "This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.2.",
+  "es2015": "fesm2015/rich-text-editor.js",
+  "esm2015": "esm2015/rich-text-editor.js",
+  "fesm2015": "fesm2015/rich-text-editor.js",
+  "main": "bundles/rich-text-editor.umd.js",
+  "module": "fesm2015/rich-text-editor.js",
+  "name": "rich-text-editor",
+  "peerDependencies": {
+    "@angular/common": "^10.0.2",
+    "@angular/core": "^10.0.2"
+  },
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy. This is not allowed.\\nPlease delete and rebuild the package, without compiling with Ivy, before attempting to publish.\\n')\" && exit 1"
+  },
+  "sideEffects": false,
+  "typings": "rich-text-editor.d.ts",
+  "version": "0.0.1"
+}

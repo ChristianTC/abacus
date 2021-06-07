@@ -1,0 +1,21 @@
+import { OnInit, EventEmitter, ElementRef } from '@angular/core';
+export declare class SwitchComponent implements OnInit {
+    private elementRef;
+    labelText: any;
+    label: string;
+    isChecked: boolean;
+    switchStyles: any;
+    switchStyle: any;
+    valueStyle: any;
+    labelStyle: any;
+    borderStyle: any;
+    signalStyle: boolean;
+    isBorderStyle: any;
+    toggleStyle: EventEmitter<any>;
+    constructor(elementRef: ElementRef);
+    ngOnInit(): void;
+    ngOnChanges(event: any): void;
+    getTransformx(css: any): string;
+    getBallSize(css: any): string;
+    onChange(event: any): void;
+}

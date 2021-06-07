@@ -1,0 +1,10 @@
+import { OnInit, EventEmitter } from '@angular/core';
+export declare class ProfileSubMenuComponent implements OnInit {
+    label: string;
+    link: string;
+    submenuStyle: any;
+    menuClick: EventEmitter<any>;
+    constructor();
+    ngOnInit(): void;
+    clickMenu(): void;
+}

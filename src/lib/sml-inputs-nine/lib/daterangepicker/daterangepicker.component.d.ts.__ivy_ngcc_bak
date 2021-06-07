@@ -1,0 +1,22 @@
+import { OnInit, ElementRef, EventEmitter } from '@angular/core';
+export declare class DaterangepickerComponent implements OnInit {
+    private elementRef;
+    value: any;
+    fromValue: any;
+    format: any;
+    name: any;
+    label: string;
+    width: any;
+    switchStyle: boolean;
+    style: any;
+    signalStyle: boolean;
+    staticStyle: boolean;
+    borderStyle: any;
+    valueStyle: any;
+    getvalue: EventEmitter<any>;
+    constructor(elementRef: ElementRef);
+    ngOnInit(): void;
+    ngOnChanges(event: any): void;
+    emitValue(val: any): void;
+    clk(): void;
+}

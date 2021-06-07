@@ -1,0 +1,17 @@
+import { OnInit, ElementRef } from '@angular/core';
+export declare class TableComponent implements OnInit {
+    private elementRef;
+    obj: any;
+    id: any;
+    width: any;
+    height: any;
+    minwidth: any;
+    isfixedheight: any;
+    scrollX: any;
+    screenWidth: any;
+    interSmlTable: any;
+    constructor(elementRef: ElementRef);
+    ngOnInit(): void;
+    ngOnDestroy(): void;
+    onResize(event: any): void;
+}

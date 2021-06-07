@@ -1,0 +1,12 @@
+import { OnInit, EventEmitter } from '@angular/core';
+export declare class SearchComponent implements OnInit {
+    value: any;
+    name: any;
+    placeholder: any;
+    width: any;
+    searchClick: EventEmitter<any>;
+    searchText: any;
+    constructor();
+    ngOnInit(): void;
+    keyup(e: any): void;
+}

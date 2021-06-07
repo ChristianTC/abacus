@@ -1,0 +1,25 @@
+import { OnInit, EventEmitter } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+export declare class VideoUploadComponent implements OnInit {
+    private http;
+    url: string;
+    path: string;
+    database: string;
+    schema: any;
+    fileResponse: EventEmitter<any>;
+    deletefileResponse: EventEmitter<any>;
+    fileId: any;
+    fileGroupId: any;
+    GenericToken: any;
+    thumbUrl: any;
+    videoLink: any;
+    percentDone: number;
+    uploadSuccess: boolean;
+    httpOptionJSON: {
+        headers: HttpHeaders;
+    };
+    constructor(http: HttpClient);
+    ngOnInit(): void;
+    uploadAndProgress(files: File[]): void;
+    deleteFIles(fileId: any): void;
+}

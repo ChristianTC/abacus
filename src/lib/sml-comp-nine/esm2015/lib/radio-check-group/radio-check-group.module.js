@@ -1,0 +1,21 @@
+import { __decorate } from "tslib";
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RadioCheckBoxListComponent } from './radio-check-group.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+let RadioCheckBoxListModule = class RadioCheckBoxListModule {
+};
+RadioCheckBoxListModule = __decorate([
+    NgModule({
+        declarations: [RadioCheckBoxListComponent],
+        imports: [
+            CommonModule,
+            FormsModule,
+            HttpClientModule
+        ],
+        exports: [RadioCheckBoxListComponent]
+    })
+], RadioCheckBoxListModule);
+export { RadioCheckBoxListModule };
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicmFkaW8tY2hlY2stZ3JvdXAubW9kdWxlLmpzIiwic291cmNlUm9vdCI6Im5nOi8vc21sLWNvbXAtbmluZS8iLCJzb3VyY2VzIjpbImxpYi9yYWRpby1jaGVjay1ncm91cC9yYWRpby1jaGVjay1ncm91cC5tb2R1bGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLE9BQU8sRUFBRSxRQUFRLEVBQUUsTUFBTSxlQUFlLENBQUM7QUFDekMsT0FBTyxFQUFFLFlBQVksRUFBRSxNQUFNLGlCQUFpQixDQUFDO0FBQy9DLE9BQU8sRUFBRSwwQkFBMEIsRUFBRSxNQUFNLCtCQUErQixDQUFDO0FBQzNFLE9BQU8sRUFBRSxXQUFXLEVBQUUsTUFBTSxnQkFBZ0IsQ0FBQztBQUM3QyxPQUFPLEVBQUUsZ0JBQWdCLEVBQUUsTUFBTSxzQkFBc0IsQ0FBQztBQVl4RCxJQUFhLHVCQUF1QixHQUFwQyxNQUFhLHVCQUF1QjtDQUFJLENBQUE7QUFBM0IsdUJBQXVCO0lBVm5DLFFBQVEsQ0FBQztRQUNSLFlBQVksRUFBRSxDQUFDLDBCQUEwQixDQUFDO1FBQzFDLE9BQU8sRUFBRTtZQUNQLFlBQVk7WUFDWixXQUFXO1lBQ1gsZ0JBQWdCO1NBQ2pCO1FBQ0QsT0FBTyxFQUFFLENBQUMsMEJBQTBCLENBQUM7S0FFdEMsQ0FBQztHQUNXLHVCQUF1QixDQUFJO1NBQTNCLHVCQUF1QiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IE5nTW9kdWxlIH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XHJcbmltcG9ydCB7IENvbW1vbk1vZHVsZSB9IGZyb20gJ0Bhbmd1bGFyL2NvbW1vbic7XHJcbmltcG9ydCB7IFJhZGlvQ2hlY2tCb3hMaXN0Q29tcG9uZW50IH0gZnJvbSAnLi9yYWRpby1jaGVjay1ncm91cC5jb21wb25lbnQnO1xyXG5pbXBvcnQgeyBGb3Jtc01vZHVsZSB9IGZyb20gJ0Bhbmd1bGFyL2Zvcm1zJztcclxuaW1wb3J0IHsgSHR0cENsaWVudE1vZHVsZSB9IGZyb20gJ0Bhbmd1bGFyL2NvbW1vbi9odHRwJztcclxuXHJcbkBOZ01vZHVsZSh7XHJcbiAgZGVjbGFyYXRpb25zOiBbUmFkaW9DaGVja0JveExpc3RDb21wb25lbnRdLFxyXG4gIGltcG9ydHM6IFtcclxuICAgIENvbW1vbk1vZHVsZSxcclxuICAgIEZvcm1zTW9kdWxlLFxyXG4gICAgSHR0cENsaWVudE1vZHVsZVxyXG4gIF0sXHJcbiAgZXhwb3J0czogW1JhZGlvQ2hlY2tCb3hMaXN0Q29tcG9uZW50XVxyXG5cclxufSlcclxuZXhwb3J0IGNsYXNzIFJhZGlvQ2hlY2tCb3hMaXN0TW9kdWxlIHsgfSJdfQ==

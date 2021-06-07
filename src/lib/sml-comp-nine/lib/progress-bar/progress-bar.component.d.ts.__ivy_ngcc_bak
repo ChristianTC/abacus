@@ -1,0 +1,14 @@
+import { OnInit, EventEmitter } from '@angular/core';
+export declare class ProgressbarComponent implements OnInit {
+    id: any;
+    value: any;
+    type: any;
+    color: any;
+    classes: any;
+    interval: any;
+    completed: EventEmitter<any>;
+    identity: any;
+    constructor();
+    ngOnInit(): void;
+    scene(): void;
+}

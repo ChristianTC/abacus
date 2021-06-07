@@ -1,0 +1,21 @@
+import { __decorate } from "tslib";
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { SinglefileuploadComponent } from './singlefileupload.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+let SinglefileuploadModule = class SinglefileuploadModule {
+};
+SinglefileuploadModule = __decorate([
+    NgModule({
+        declarations: [SinglefileuploadComponent],
+        imports: [
+            CommonModule,
+            FormsModule,
+            HttpClientModule
+        ],
+        exports: [SinglefileuploadComponent]
+    })
+], SinglefileuploadModule);
+export { SinglefileuploadModule };
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic2luZ2xlZmlsZXVwbG9hZC5tb2R1bGUuanMiLCJzb3VyY2VSb290Ijoibmc6Ly9zbWwtY29tcC1uaW5lLyIsInNvdXJjZXMiOlsibGliL3NpbmdsZWZpbGV1cGxvYWQvc2luZ2xlZmlsZXVwbG9hZC5tb2R1bGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLE9BQU8sRUFBRSxRQUFRLEVBQUUsTUFBTSxlQUFlLENBQUM7QUFDekMsT0FBTyxFQUFFLFlBQVksRUFBRSxNQUFNLGlCQUFpQixDQUFDO0FBQy9DLE9BQU8sRUFBRSx5QkFBeUIsRUFBRSxNQUFNLDhCQUE4QixDQUFDO0FBQ3pFLE9BQU8sRUFBRSxXQUFXLEVBQUUsTUFBTSxnQkFBZ0IsQ0FBQztBQUM3QyxPQUFPLEVBQUUsZ0JBQWdCLEVBQUUsTUFBTSxzQkFBc0IsQ0FBQztBQVl4RCxJQUFhLHNCQUFzQixHQUFuQyxNQUFhLHNCQUFzQjtDQUFJLENBQUE7QUFBMUIsc0JBQXNCO0lBVmxDLFFBQVEsQ0FBQztRQUNSLFlBQVksRUFBRSxDQUFDLHlCQUF5QixDQUFDO1FBQ3pDLE9BQU8sRUFBRTtZQUNQLFlBQVk7WUFDWixXQUFXO1lBQ1gsZ0JBQWdCO1NBQ2pCO1FBQ0QsT0FBTyxFQUFDLENBQUMseUJBQXlCLENBQUM7S0FFcEMsQ0FBQztHQUNXLHNCQUFzQixDQUFJO1NBQTFCLHNCQUFzQiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IE5nTW9kdWxlIH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XHJcbmltcG9ydCB7IENvbW1vbk1vZHVsZSB9IGZyb20gJ0Bhbmd1bGFyL2NvbW1vbic7XHJcbmltcG9ydCB7IFNpbmdsZWZpbGV1cGxvYWRDb21wb25lbnQgfSBmcm9tICcuL3NpbmdsZWZpbGV1cGxvYWQuY29tcG9uZW50JztcclxuaW1wb3J0IHsgRm9ybXNNb2R1bGUgfSBmcm9tICdAYW5ndWxhci9mb3Jtcyc7XHJcbmltcG9ydCB7IEh0dHBDbGllbnRNb2R1bGUgfSBmcm9tICdAYW5ndWxhci9jb21tb24vaHR0cCc7XHJcblxyXG5ATmdNb2R1bGUoe1xyXG4gIGRlY2xhcmF0aW9uczogW1NpbmdsZWZpbGV1cGxvYWRDb21wb25lbnRdLFxyXG4gIGltcG9ydHM6IFtcclxuICAgIENvbW1vbk1vZHVsZSxcclxuICAgIEZvcm1zTW9kdWxlLFxyXG4gICAgSHR0cENsaWVudE1vZHVsZVxyXG4gIF0sXHJcbiAgZXhwb3J0czpbU2luZ2xlZmlsZXVwbG9hZENvbXBvbmVudF1cclxuXHJcbn0pXHJcbmV4cG9ydCBjbGFzcyBTaW5nbGVmaWxldXBsb2FkTW9kdWxlIHsgfSJdfQ==

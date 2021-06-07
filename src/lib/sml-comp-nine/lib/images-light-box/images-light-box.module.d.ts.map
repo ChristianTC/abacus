@@ -1,0 +1,1 @@
+{"version":3,"file":"images-light-box.module.d.ts","sources":["images-light-box.module.d.ts"],"names":[],"mappings":";;;;;AAAA;;;AACA","sourcesContent":["export declare class ImagesLightBoxModule {\r\n}\r\n"]}

@@ -1,0 +1,11 @@
+import { OnInit } from '@angular/core';
+export declare class AlertComponent implements OnInit {
+    constructor();
+    ngOnInit(): void;
+    success(): void;
+    error(): void;
+    info(): void;
+    warning(): void;
+    doubt(): void;
+    delete(): void;
+}

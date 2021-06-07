@@ -1,0 +1,14 @@
+import { OnInit, EventEmitter, ElementRef } from '@angular/core';
+export declare class ButtonComponent implements OnInit {
+    private elementRef;
+    icon: any;
+    label: any;
+    btnCl: any;
+    iconCl: any;
+    buttonStyle: any;
+    buttonClick: EventEmitter<any>;
+    constructor(elementRef: ElementRef);
+    ngOnInit(): void;
+    ngOnChanges(event: any): void;
+    clickEvent(): void;
+}

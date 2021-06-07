@@ -1,0 +1,31 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+}
+
+.Header .logo {
+	color:#f2f2f2;
+	font-size:20px;
+	padding:10px 20px;
+
+	/* line-height:200px; */
+	float:left;
+}
+
+.Header nav {
+    float: right;
+    /* line-height: 200px; */
+}
+
+.Header nav a {
+	display:inline-block;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:20px;
+	font-weight:bold;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+}

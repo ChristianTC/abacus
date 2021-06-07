@@ -1,0 +1,11 @@
+import { OnInit, EventEmitter, ElementRef } from '@angular/core';
+export declare class TagInputComponent implements OnInit {
+    private elementRef;
+    value: any;
+    name: any;
+    onEnter: EventEmitter<any>;
+    constructor(elementRef: ElementRef);
+    ngOnInit(): void;
+    ngOnChanges(event: any): void;
+    onEnterClick(): void;
+}

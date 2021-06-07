@@ -1,0 +1,21 @@
+import { __decorate } from "tslib";
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { ImagesLightBoxComponent } from './images-light-box.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+let ImagesLightBoxModule = class ImagesLightBoxModule {
+};
+ImagesLightBoxModule = __decorate([
+    NgModule({
+        declarations: [ImagesLightBoxComponent],
+        imports: [
+            CommonModule,
+            FormsModule,
+            HttpClientModule
+        ],
+        exports: [ImagesLightBoxComponent]
+    })
+], ImagesLightBoxModule);
+export { ImagesLightBoxModule };
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW1hZ2VzLWxpZ2h0LWJveC5tb2R1bGUuanMiLCJzb3VyY2VSb290Ijoibmc6Ly9zbWwtY29tcC1uaW5lLyIsInNvdXJjZXMiOlsibGliL2ltYWdlcy1saWdodC1ib3gvaW1hZ2VzLWxpZ2h0LWJveC5tb2R1bGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLE9BQU8sRUFBRSxRQUFRLEVBQUUsTUFBTSxlQUFlLENBQUM7QUFDekMsT0FBTyxFQUFFLFlBQVksRUFBRSxNQUFNLGlCQUFpQixDQUFDO0FBQy9DLE9BQU8sRUFBRSx1QkFBdUIsRUFBRSxNQUFNLDhCQUE4QixDQUFDO0FBQ3ZFLE9BQU8sRUFBRSxXQUFXLEVBQUUsTUFBTSxnQkFBZ0IsQ0FBQztBQUM3QyxPQUFPLEVBQUUsZ0JBQWdCLEVBQUUsTUFBTSxzQkFBc0IsQ0FBQztBQVl4RCxJQUFhLG9CQUFvQixHQUFqQyxNQUFhLG9CQUFvQjtDQUFJLENBQUE7QUFBeEIsb0JBQW9CO0lBVmhDLFFBQVEsQ0FBQztRQUNSLFlBQVksRUFBRSxDQUFDLHVCQUF1QixDQUFDO1FBQ3ZDLE9BQU8sRUFBRTtZQUNQLFlBQVk7WUFDWixXQUFXO1lBQ1gsZ0JBQWdCO1NBQ2pCO1FBQ0QsT0FBTyxFQUFDLENBQUMsdUJBQXVCLENBQUM7S0FFbEMsQ0FBQztHQUNXLG9CQUFvQixDQUFJO1NBQXhCLG9CQUFvQiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IE5nTW9kdWxlIH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XHJcbmltcG9ydCB7IENvbW1vbk1vZHVsZSB9IGZyb20gJ0Bhbmd1bGFyL2NvbW1vbic7XHJcbmltcG9ydCB7IEltYWdlc0xpZ2h0Qm94Q29tcG9uZW50IH0gZnJvbSAnLi9pbWFnZXMtbGlnaHQtYm94LmNvbXBvbmVudCc7XHJcbmltcG9ydCB7IEZvcm1zTW9kdWxlIH0gZnJvbSAnQGFuZ3VsYXIvZm9ybXMnO1xyXG5pbXBvcnQgeyBIdHRwQ2xpZW50TW9kdWxlIH0gZnJvbSAnQGFuZ3VsYXIvY29tbW9uL2h0dHAnO1xyXG5cclxuQE5nTW9kdWxlKHtcclxuICBkZWNsYXJhdGlvbnM6IFtJbWFnZXNMaWdodEJveENvbXBvbmVudF0sXHJcbiAgaW1wb3J0czogW1xyXG4gICAgQ29tbW9uTW9kdWxlLFxyXG4gICAgRm9ybXNNb2R1bGUsXHJcbiAgICBIdHRwQ2xpZW50TW9kdWxlXHJcbiAgXSxcclxuICBleHBvcnRzOltJbWFnZXNMaWdodEJveENvbXBvbmVudF1cclxuXHJcbn0pXHJcbmV4cG9ydCBjbGFzcyBJbWFnZXNMaWdodEJveE1vZHVsZSB7IH0iXX0=

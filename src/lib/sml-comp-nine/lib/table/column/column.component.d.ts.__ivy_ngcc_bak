@@ -1,0 +1,17 @@
+import { OnInit, EventEmitter } from '@angular/core';
+export declare class ColumnComponent implements OnInit {
+    name: any;
+    width: any;
+    minwidth: any;
+    obj: any;
+    id: any;
+    headerStyle: any;
+    alignment: any;
+    sortClick: EventEmitter<any>;
+    table_width: any;
+    constructor();
+    ngOnInit(): void;
+    onResize(event: any): void;
+    resizeColumn(): void;
+    sort(): void;
+}

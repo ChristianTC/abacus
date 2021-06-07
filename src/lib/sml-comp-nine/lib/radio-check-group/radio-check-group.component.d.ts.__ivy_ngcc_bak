@@ -1,0 +1,13 @@
+import { OnInit, EventEmitter } from '@angular/core';
+export declare class RadioCheckBoxListComponent implements OnInit {
+    id: any;
+    name: any;
+    jsonData: any;
+    type: any;
+    selectedValue: any;
+    radioChange: EventEmitter<any>;
+    checkboxChange: EventEmitter<any>;
+    constructor();
+    ngOnInit(): void;
+    changeEvent(event: any): void;
+}

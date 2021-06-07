@@ -1,0 +1,26 @@
+import { OnInit, EventEmitter, ElementRef } from '@angular/core';
+export declare class SelectComponent implements OnInit {
+    private elementRef;
+    id: any;
+    label: any;
+    disabled: boolean;
+    clearable: boolean;
+    listValue: any;
+    value: any;
+    style: any;
+    borderStyle: any;
+    valueStyle: any;
+    signalStyle: boolean;
+    staticStyle: boolean;
+    switchStyle: boolean;
+    swGroupBy: boolean;
+    multiple: boolean;
+    selectvalue: EventEmitter<any>;
+    isOpen: any;
+    constructor(elementRef: ElementRef);
+    ngOnInit(): void;
+    ngOnChanges(event: any): void;
+    getselectvalue(event: any): void;
+    onOpen(): void;
+    onClose(): void;
+}

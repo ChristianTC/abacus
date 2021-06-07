@@ -1,0 +1,53 @@
+import { OnInit, ElementRef, EventEmitter } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Http } from '@angular/http';
+import { Observable } from 'rxjs';
+import 'rxjs/Rx';
+import * as ɵngcc0 from '@angular/core';
+export declare class ImagecropComponent implements OnInit {
+    private http;
+    private _http;
+    video: any;
+    canvas: ElementRef;
+    title: string;
+    height: number;
+    width: number;
+    value: string;
+    url: string;
+    path: string;
+    OnSaveFile: EventEmitter<any>;
+    modelCondition: string;
+    showModel: boolean;
+    showImg: boolean;
+    cropBtn: boolean;
+    camcropBtn: boolean;
+    snapPhoto: boolean;
+    showUplaod: boolean;
+    avtarImage: boolean;
+    captureImage: any;
+    captures: Array<any>;
+    imageName: string;
+    imagePath: any;
+    dataApi: any;
+    videos: any;
+    constructor(http: HttpClient, _http: Http);
+    ngOnInit(): void;
+    ngAfterViewInit(): void;
+    start(): void;
+    sound(): void;
+    initCamera(config: any): void;
+    modelBox(): void;
+    closeModel(): void;
+    capture(): void;
+    cropcam(): void;
+    snapPhotoEvt(): void;
+    fileChangeEvent(fileInput: any): void;
+    crop(): void;
+    upload(): void;
+    DataDB(database: any, schema: any, procedureName: any, params?: {}): Observable<any>;
+    errorHandler(error: any): Observable<never>;
+    static ɵfac: ɵngcc0.ɵɵFactoryDef<ImagecropComponent, never>;
+    static ɵcmp: ɵngcc0.ɵɵComponentDefWithMeta<ImagecropComponent, "sml-imagecrop", never, { "url": "url"; "path": "path"; "title": "title"; "height": "height"; "width": "width"; "value": "value"; }, { "OnSaveFile": "OnSaveFile"; }, never, never>;
+}
+
+//# sourceMappingURL=imagecrop.component.d.ts.map

@@ -1,0 +1,1 @@
+{"version":3,"file":"updown.module.d.ts","sources":["updown.module.d.ts"],"names":[],"mappings":";;;;;AAAA;;;AACA","sourcesContent":["export declare class UpdownModule {\r\n}\r\n"]}

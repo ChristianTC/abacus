@@ -1,0 +1,6 @@
+/*
+ * Public API Surface of rich-text-editor
+ */
+export * from './lib/rich-text-editor.component';
+export * from './lib/rich-text-editor.module';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Byb2plY3RzL3JpY2gtdGV4dC1lZGl0b3Ivc3JjL3B1YmxpYy1hcGkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0dBRUc7QUFFSCxjQUFjLGtDQUFrQyxDQUFDO0FBQ2pELGNBQWMsK0JBQStCLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyIvKlxyXG4gKiBQdWJsaWMgQVBJIFN1cmZhY2Ugb2YgcmljaC10ZXh0LWVkaXRvclxyXG4gKi9cclxuXHJcbmV4cG9ydCAqIGZyb20gJy4vbGliL3JpY2gtdGV4dC1lZGl0b3IuY29tcG9uZW50JztcclxuZXhwb3J0ICogZnJvbSAnLi9saWIvcmljaC10ZXh0LWVkaXRvci5tb2R1bGUnO1xyXG4iXX0=

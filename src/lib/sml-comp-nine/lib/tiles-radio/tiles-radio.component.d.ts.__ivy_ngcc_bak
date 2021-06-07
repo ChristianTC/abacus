@@ -1,0 +1,14 @@
+import { OnInit, EventEmitter } from '@angular/core';
+export declare class TilesRadioComponent implements OnInit {
+    id: any;
+    name: any;
+    jsonData: any;
+    width: any;
+    img_height: any;
+    background: any;
+    selectedValue: any;
+    radioChange: EventEmitter<any>;
+    constructor();
+    ngOnInit(): void;
+    changeEvent(): void;
+}

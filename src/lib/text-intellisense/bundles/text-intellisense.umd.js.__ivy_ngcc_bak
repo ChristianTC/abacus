@@ -1,0 +1,179 @@
+(function (global, factory) {
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/common/http'), require('@angular/common'), require('@angular/forms'), require('keyboardevent-key-polyfill'), require('angular-text-input-autocomplete')) :
+    typeof define === 'function' && define.amd ? define('text-intellisense', ['exports', '@angular/core', '@angular/common/http', '@angular/common', '@angular/forms', 'keyboardevent-key-polyfill', 'angular-text-input-autocomplete'], factory) :
+    (global = global || self, factory(global['text-intellisense'] = {}, global.ng.core, global.ng.common.http, global.ng.common, global.ng.forms, global.keyboardeventKeyPolyfill, global.angularTextInputAutocomplete));
+}(this, (function (exports, core, http, common, forms, keyboardeventKeyPolyfill, angularTextInputAutocomplete) { 'use strict';
+
+    var TextIntellisenseComponent = /** @class */ (function () {
+        function TextIntellisenseComponent(elementRef, http$1) {
+            var _this = this;
+            this.elementRef = elementRef;
+            this.http = http$1;
+            this.Id = "Id";
+            this.Name = "Name";
+            this.LabelName = "LabelName";
+            this.TabIndex = 1;
+            this.Type = 'text';
+            this.Maxlength = 255;
+            this.Value = "";
+            this.Rows = 1;
+            this.TriggerCharacter = "{";
+            this.LabelStyle = {};
+            this.BorderStyle = {};
+            this.ValueStyle = {};
+            this.ReadOnly = false;
+            this.Disabled = false;
+            this.LabelTop = false;
+            this.database = "ADMIN";
+            this.schema = "list";
+            this.procedure = "NASS_FIELDS_ListCombo";
+            this.fieldName = "TableFullName";
+            this.apiURL = 'https://emunatemplate.aaadev.info/Api/';
+            this.GetValue = new core.EventEmitter;
+            this.BlurValue = new core.EventEmitter;
+            this.randKey = Math.floor(Math.random() * 10000000000) + 1;
+            this.showList = false;
+            this.listData = [];
+            this.GenericToken = "";
+            this.leftCss = "auto";
+            this.httpOptionJSON = {
+                headers: new http.HttpHeaders({
+                    'Content-Type': 'application/json'
+                })
+            };
+            this.findChoices = function (searchText) {
+                return _this.listData.filter(function (item) { return item.toLowerCase().includes(searchText.toLowerCase()); });
+            };
+            this.getChoiceLabel = function (choice) {
+                if (_this.TriggerCharacter !== '{') {
+                    return _this.TriggerCharacter + choice + ' ';
+                }
+                else {
+                    return '{' + choice + '} ';
+                }
+            };
+        }
+        TextIntellisenseComponent.prototype.ngOnInit = function () {
+            this.getToken();
+        };
+        TextIntellisenseComponent.prototype.ngOnChanges = function (event) {
+            if (event.LabelStyle != undefined && event.LabelStyle.currentValue != undefined) {
+                var css = event.LabelStyle.currentValue;
+                this.elementRef.nativeElement.style.setProperty('--c-width', css['c-width']);
+                this.elementRef.nativeElement.style.setProperty('--c-height', css['c-height']);
+                this.elementRef.nativeElement.style.setProperty('--label-left', css['label-left']);
+                this.elementRef.nativeElement.style.setProperty('--label-top', css['label-top']);
+            }
+            if (event.ValueStyle != undefined && event.ValueStyle.currentValue != undefined) {
+                var css = event.ValueStyle.currentValue;
+                this.elementRef.nativeElement.style.setProperty('--value-left', css['value-left']);
+                this.elementRef.nativeElement.style.setProperty('--value-top', css['value-top']);
+            }
+        };
+        TextIntellisenseComponent.prototype.GetValueEvent = function (event) {
+            var getVal = event.target.value;
+            this.GetValue.emit(event.target.value);
+        };
+        TextIntellisenseComponent.prototype.OnBlurEvent = function (event) {
+            this.BlurValue.emit(event.target.value);
+        };
+        TextIntellisenseComponent.prototype.getToken = function () {
+            var _this = this;
+            if (this.GenericToken == "") {
+                this.http.get(this.apiURL + "GetSystemInfo?passcode=flipper613").subscribe(function (res) {
+                    _this.GenericToken = res["GenericToken"];
+                    _this.getGlobalField();
+                });
+            }
+        };
+        TextIntellisenseComponent.prototype.getGlobalField = function () {
+            var _this = this;
+            var url = this.apiURL + "Data/Exec/" + this.database + "/" + this.schema + "/" + this.procedure + "?api_key=" + this.GenericToken;
+            this.http.post(url, {}, this.httpOptionJSON).subscribe(function (res) {
+                if (res) {
+                    _this.listData = [];
+                    var temp = [];
+                    temp = res;
+                    for (var i = 0; i < temp.length; i++) {
+                        var nType = {
+                            id: temp[i].CodeId,
+                            name: temp[i].Description
+                        };
+                        _this.listData.push(temp[i].Description);
+                    }
+                }
+                else {
+                    _this.listData = [];
+                }
+            }, function (error) {
+                _this.listData = [];
+            });
+        };
+        return TextIntellisenseComponent;
+    }());
+    TextIntellisenseComponent.decorators = [
+        { type: core.Component, args: [{ selector: 'emuna-text-intellisense', template: "<div class=\"position-relative {{randKey}}\">\r\n\t<div class=\"emuna-controls\" [ngClass]=\"{'emuna-label-top': (LabelTop),'emuna-disabled': Disabled}\">\r\n\t\t<div class=\"emuna-common-control emuna-textarea-control\" [ngStyle]=\"BorderStyle\" [ngClass]=\"{'emuna-no-padding-top': (LabelName == ''),'emuna-disabled': Disabled}\">\r\n\t\t\t<mwl-text-input-autocomplete-container>\r\n\t\t\t<textarea mwlTextInputAutocomplete [id]=\"Id\" [name]=\"Name\" [class]=\"'emuna-form-control-textarea'\" [tabindex]=\"TabIndex\" [rows]=\"Rows\"\r\n\t\t\t [attr.maxlength]=\"Maxlength\" [(ngModel)]=\"Value\" [disabled]=\"Disabled\" [ngClass]=\"{'emuna-disabled': Disabled}\" [ngStyle]=\"ValueStyle\"\r\n\t\t\t (blur)=\"OnBlurEvent($event)\" (keyup)=\"GetValueEvent($event)\" [triggerCharacter]=\"TriggerCharacter\"\r\n        \t [findChoices]=\"findChoices\" [getChoiceLabel]=\"getChoiceLabel\"></textarea>\r\n        \t</mwl-text-input-autocomplete-container>\r\n\t\t\t<label *ngIf=\"LabelName != ''\" [ngStyle]=\"LabelStyle\" class=\"emuna-label\">{{LabelName}}</label>\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n    ", styles: [":host{--c-height:30px;--c-width:100%;--label-left:5px;--label-top:5px;--text-dark:#1d2936;--text-theme:#3ec6f4;--text-white:#fff;--value-left:10px;--value-top:0px}.emuna-controls.emuna-label-top{position:relative}.emuna-controls.emuna-label-top .emuna-common-control{padding-top:0;position:inherit}.emuna-controls.emuna-label-top .emuna-common-control .emuna-label{left:0!important;top:-24px!important}.emuna-no-padding-top{padding-top:0!important}.emuna-label{color:var(--text-theme);left:var(--label-left);opacity:1;position:absolute;top:var(--label-top);transform:translateY(0);transition:all .2s}.emuna-textarea-control{background-color:var(--text-white);border:1px solid var(--text-theme);border-radius:0;max-width:100%;padding:15px 5px 0;position:relative}.emuna-form-control-textarea:focus{outline:none}.emuna-form-control-textarea{background-color:var(--text-white);border:none;color:var(--text-dark);display:block;font-size:16px;font-weight:400;height:calc(var(--c-height) + var(--value-top));max-width:100%;padding-left:var(--value-left);padding-top:3px;padding-top:var(--value-top);resize:none;width:var(--c-width)}.emuna-disabled{background-color:#e9ecef!important;cursor:not-allowed!important;opacity:.9!important;pointer-events:none!important}"] },] }
+    ];
+    TextIntellisenseComponent.ctorParameters = function () { return [
+        { type: core.ElementRef },
+        { type: http.HttpClient }
+    ]; };
+    TextIntellisenseComponent.propDecorators = {
+        Id: [{ type: core.Input }],
+        Name: [{ type: core.Input }],
+        LabelName: [{ type: core.Input }],
+        TabIndex: [{ type: core.Input }],
+        Type: [{ type: core.Input }],
+        Maxlength: [{ type: core.Input }],
+        Value: [{ type: core.Input }],
+        Rows: [{ type: core.Input }],
+        TriggerCharacter: [{ type: core.Input }],
+        LabelStyle: [{ type: core.Input }],
+        BorderStyle: [{ type: core.Input }],
+        ValueStyle: [{ type: core.Input }],
+        ReadOnly: [{ type: core.Input }],
+        Disabled: [{ type: core.Input }],
+        LabelTop: [{ type: core.Input }],
+        database: [{ type: core.Input }],
+        schema: [{ type: core.Input }],
+        procedure: [{ type: core.Input }],
+        fieldName: [{ type: core.Input }],
+        apiURL: [{ type: core.Input }],
+        GetValue: [{ type: core.Output }],
+        BlurValue: [{ type: core.Output }]
+    };
+
+    keyboardeventKeyPolyfill.polyfill();
+    var TextIntellisense = /** @class */ (function () {
+        function TextIntellisense() {
+        }
+        return TextIntellisense;
+    }());
+    TextIntellisense.decorators = [
+        { type: core.NgModule, args: [{
+                    declarations: [TextIntellisenseComponent],
+                    imports: [
+                        common.CommonModule,
+                        forms.FormsModule,
+                        http.HttpClientModule,
+                        angularTextInputAutocomplete.TextInputAutocompleteModule
+                    ],
+                    exports: [TextIntellisenseComponent]
+                },] }
+    ];
+
+    /*
+     * Public API Surface of list-search
+     */
+
+    /**
+     * Generated bundle index. Do not edit.
+     */
+
+    exports.TextIntellisense = TextIntellisense;
+    exports.TextIntellisenseComponent = TextIntellisenseComponent;
+
+    Object.defineProperty(exports, '__esModule', { value: true });
+
+})));
+//# sourceMappingURL=text-intellisense.umd.js.map

@@ -1,0 +1,28 @@
+import { OnInit, EventEmitter } from '@angular/core';
+export declare class TableBodyComponent implements OnInit {
+    data: any;
+    dropdownButtons: any;
+    dropdownButtonsList: any;
+    columns: any;
+    rowstyle: any;
+    alignment: any;
+    height: any;
+    width: any;
+    minwidth: any;
+    obj: any;
+    id: any;
+    isLoading: any;
+    dropdownButtonStyle: any;
+    actionClick: EventEmitter<any>;
+    valueClick: EventEmitter<any>;
+    textBoxEvent: EventEmitter<any>;
+    dropdownButton: any[];
+    constructor();
+    ngOnInit(): void;
+    onResize(event: any): void;
+    trackByIndex(index: any): any;
+    trackByIndex1(index: any): any;
+    clickMethod(actionType: any, row: any): void;
+    columnClick(row: any, col: any): void;
+    textBoxMethod(row: any, col: any, type: any): void;
+}

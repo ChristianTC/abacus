@@ -1,0 +1,23 @@
+import { OnInit, EventEmitter, ElementRef } from '@angular/core';
+export declare class UpdownComponent implements OnInit {
+    private elementRef;
+    initialValue: any;
+    switchStyle: any;
+    isNagative: any;
+    textAlign: any;
+    label: string;
+    isLabel: any;
+    style: any;
+    valueStyle: any;
+    borderStyle: any;
+    signalStyle: boolean;
+    staticStyle: boolean;
+    valueChange: EventEmitter<any>;
+    constructor(elementRef: ElementRef);
+    ngOnInit(): void;
+    ngOnChanges(event: any): void;
+    styleObject(): Object;
+    increaseValue(): void;
+    decreaseValue(): boolean;
+    onBlurMethod(): void;
+}

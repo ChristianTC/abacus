@@ -1,0 +1,38 @@
+{
+  "name": "sml-inputs-nine",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^9.0.5",
+    "@angular/core": "^9.0.5",
+    "@ng-bootstrap/ng-bootstrap": "^4.1.2",
+    "ngx-mask": "^7.9.10",
+    "@types/jquery": "^3.3.33",
+    "jquery": "^3.4.1",
+    "@ng-select/ng-select": "^3.7.3",
+    "ngx-currency": "^2.2.2",
+    "ngx-color-picker": "^8.1.0",
+    "ng-pick-datetime": "^7.0.0",
+    "ngx-material-timepicker": "^3.0.3",
+    "tslib": "^1.10.0"
+  },
+  "main": "bundles/sml-inputs-nine.umd.js",
+  "module": "fesm5/sml-inputs-nine.js",
+  "es2015_ivy_ngcc": "__ivy_ngcc__/fesm2015/sml-inputs-nine.js",
+  "es2015": "fesm2015/sml-inputs-nine.js",
+  "esm5": "esm5/sml-inputs-nine.js",
+  "esm2015": "esm2015/sml-inputs-nine.js",
+  "fesm5": "fesm5/sml-inputs-nine.js",
+  "fesm2015_ivy_ngcc": "__ivy_ngcc__/fesm2015/sml-inputs-nine.js",
+  "fesm2015": "fesm2015/sml-inputs-nine.js",
+  "typings": "sml-inputs-nine.d.ts",
+  "metadata": "sml-inputs-nine.metadata.json",
+  "sideEffects": false,
+  "__processed_by_ivy_ngcc__": {
+    "es2015": "10.1.6",
+    "fesm2015": "10.1.6",
+    "typings": "10.1.6"
+  },
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by NGCC. This is not allowed.\\nPlease delete and rebuild the package, without compiling with NGCC, before attempting to publish.\\nNote that NGCC may have been run by importing this package into another project that is being built with Ivy enabled.\\n')\" && exit 1"
+  }
+}

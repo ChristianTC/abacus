@@ -1,0 +1,20 @@
+import { OnInit, EventEmitter } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+export declare class ContactUsComponent implements OnInit {
+    private http;
+    labelStyle: any;
+    borderStyle: any;
+    valueStyle: any;
+    buttonStyle: any;
+    itemObject: any;
+    GenericToken: any;
+    apiURL: any;
+    responseCall: EventEmitter<any>;
+    httpOptionJSON: {
+        headers: HttpHeaders;
+    };
+    constructor(http: HttpClient);
+    ngOnInit(): void;
+    getToken(): void;
+    sendMail(): void;
+}

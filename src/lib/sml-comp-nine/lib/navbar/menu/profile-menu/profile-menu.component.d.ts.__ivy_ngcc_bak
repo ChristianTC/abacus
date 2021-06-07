@@ -1,0 +1,8 @@
+import { OnInit } from '@angular/core';
+export declare class ProfileMenuComponent implements OnInit {
+    label: string;
+    imagepath: string;
+    menuStyle: any;
+    constructor();
+    ngOnInit(): void;
+}

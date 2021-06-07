@@ -1,0 +1,1 @@
+{"version":3,"file":"navbar.component.d.ts","sources":["navbar.component.d.ts"],"names":[],"mappings":"AAAA;;AACA;;;;;;;AAKA","sourcesContent":["import { OnInit } from '@angular/core';\r\nexport declare class NavbarComponent implements OnInit {\r\n    iswelcome: any;\r\n    navStyle: any;\r\n    constructor();\r\n    ngOnInit(): void;\r\n}\r\n"]}
