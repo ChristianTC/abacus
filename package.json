@@ -6,14 +6,20 @@
     "@testing-library/jest-dom": "^5.13.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^4.6.0",
     "react": "^17.0.2",
+    "react-bootstrap": "^1.6.1",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2",
+    "react-slick": "^0.28.1",
+    "react-swipe": "^6.0.4",
+    "slick-carousel": "^1.8.1",
     "sml-comp-nine": "file:src/lib/sml-comp-nine",
     "sml-inputs-nine": "file:src/lib/sml-inputs-nine",
-    "sml-services-nine": "file:src/lib/sml-services-nine"
+    "sml-services-nine": "file:src/lib/sml-services-nine",
+    "swipe-js-iso": "^2.1.5",
+    "swiper": "^6.7.0",
+    "web-vitals": "^1.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
