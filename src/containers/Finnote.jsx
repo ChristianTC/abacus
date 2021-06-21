@@ -253,7 +253,7 @@ const Finnote = () => {
                                     <li><a href="/#"><span> Pre-Notice Process Initia ... </span></a></li>
                                     <li><a href="/#"><span> Signed Contract Received  ... </span></a></li>
                                     <li><a href="/#"><span> Contract Sent To Finance  ...   ... </span></a></li>
-                                    <li className="selected"><a href="/#"><span>Notice of Acceptance Rece ... </span></a></li>
+                                    <li className="selected"><a href="/#"><span> Notice of Acceptance Rece ... </span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -311,9 +311,9 @@ const Finnote = () => {
                         <ul className="justify-content-start nav nav-tabs">
                             <li className="nav-item">
                                 <div className="button-add">
-                                    <div  className={`nav-link ${actived[0]}`} onClick={() => setNavLink('OpenTasks')}>
+                                    <div  className={`nav-link ${actived[0]}`} style={{display: "flex", alignItems: "center"}} onClick={() => setNavLink('OpenTasks')}>
                                         <b className="btext">Open Tasks</b>
-                                        <span className="green">1 </span>
+                                        <span className="green icon-redonded"> 1 </span>
                                             <MyVerticallyCenteredModal
                                                 show={modalShow}
                                                 onHide={() => setModalShow(false)}
@@ -323,31 +323,33 @@ const Finnote = () => {
                                 </div>
                             </li>
                             <li className="nav-item">
-                                <div  className={`nav-link ${actived[1]}`} onClick={() => setNavLink('Actions')}>
+                                <div  className={`nav-link ${actived[1]}`} style={{display: "flex", alignItems: "center"}} onClick={() => setNavLink('Actions')}>
                                     <b className="btext">Actions</b>
-                                    <span className="green">1</span>
+                                    <span className="green icon-redonded"> 1  </span>
                                     <a href="" className="plusGroup"></a>
                                 </div>
                             </li>
 
                             <li className="nav-item">
-                                <div  className={`nav-link ${actived[2]}`} onClick={() => setNavLink('Notes')}>
+                                <div  className={`nav-link ${actived[2]}`} style={{display: "flex", alignItems: "center"}} onClick={() => setNavLink('Notes')}>
                                     <b className="btext">Notes</b>
-                                    <span className="green">1</span>
+                                    <div className="icon-redonded">
+                                        <span className="green"> 1  </span>
+                                    </div>
                                     <a href="" className="plusGroup"></a>
                                 </div>
                             </li>
                             <li className="nav-item">
-                                <div  className={`nav-link ${actived[3]}`} onClick={() => setNavLink('Document')}>
+                                <div  className={`nav-link ${actived[3]}`} style={{display: "flex", alignItems: "center"}} onClick={() => setNavLink('Document')}>
                                     <b className="btext">Document</b>
-                                    <span className="green">1</span>
+                                    <span className="green icon-redonded"> 1  </span>
                                     <a href="" className="plusGroup"></a>
                                 </div>
                             </li>
                             <li className="nav-item">
-                                <div  className={`nav-link ${actived[4]}`} onClick={() => setNavLink('ChangesLog')}>
+                                <div  className={`nav-link ${actived[4]}`} style={{display: "flex", alignItems: "center"}} onClick={() => setNavLink('ChangesLog')}>
                                     <b className="btext">Changes Log</b>
-                                    <span className="green">1</span>
+                                    <span className="green icon-redonded"> 1  </span>
                                     <a href="" className="plusGroup"></a>
                                 </div>
                             </li>
