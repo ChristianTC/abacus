@@ -11,6 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import userIcon from '../assets/img/usericon.png';
 import send from '../assets/img/send.png';
 import { height } from 'dom7';
+import { useParams } from 'react-router-dom';
 
 let tasks = [];
 const tasksArray = [];
@@ -20,8 +21,10 @@ const Finnote = () => {
     // Data
     const [finnote, setFinnote] = useState([]);
     
+    let param = useParams();
+    // console.log(id);
     useEffect(() => {
-        fetch('https://apps.abacuscrm.net/api/Models/FINNOTE/1444?api_key=c606995afe964a17bc298eda26badc40c606995afe964a17bc298eda26badc40')
+        fetch(`https://apps.abacuscrm.net/api/Models/FINNOTE/${param.id}?api_key=c606995afe964a17bc298eda26badc40c606995afe964a17bc298eda26badc40`)
         .then(response => response.json())
         .then(data => setFinnote(data))
     }, []);
