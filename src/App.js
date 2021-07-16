@@ -12,7 +12,7 @@ function App() {
       <Header />
     <BrowserRouter>
         <Route exact path="/" component={Home}></Route>
-        <Route exact path="/finnote/:id" component={Finnote}></Route>
+        <Route exact path="/build/6192/finnote/details/:id" component={Finnote}></Route>
     </BrowserRouter>
       {/* <Finnote /> */}
       <Footer />

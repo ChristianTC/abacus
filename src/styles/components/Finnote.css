@@ -207,6 +207,13 @@ ul.breadcrumb {
     margin-right: 5px;
     margin-left: 5px;
 }
+.financeInf-data input{
+    width: 100%;
+    border: 0;
+}
+.financeInf-data input:focus-visible{
+    outline: none;
+}
 .financeInf-data_247 {
     margin-right: 10px;
     width: 247px;

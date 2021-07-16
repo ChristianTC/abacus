@@ -1,0 +1,1026 @@
+.mainHeadingh {
+    font-size: 14px;
+    padding: 10px 0;
+    color: #6ba23a;
+}
+
+.line {
+    /* width: 80%; */
+    height: 2px;
+    background-color: #6ba23a;
+    margin-right: 20px;
+}
+
+.bgbr {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.tbborder {
+    border-top: 1px solid #cacaca;
+    border-bottom: 1px solid #cacaca;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.active {
+    background-color: #6ba23a;
+    color: #fff;
+}
+
+.bgwhite {
+    background-color: #fff !important;
+    width: 100%;
+    float: left;
+}
+
+.d-flex {
+    width: 100% !important;
+}
+
+.bborder {
+    border-bottom: 1px solid #cacaca;
+    padding: 15px 0;
+}
+
+.boldheading {
+    font-size: 18px;
+    color: #333;
+}
+
+:host /deep/ {
+    text-align: left !important;
+}
+
+:host /deep/ {
+    width: 100% !important;
+}
+
+:host /deep/ .float-group {
+    position: relative;
+    /* padding: 8px 0 2px 0px !important; */
+    height: 45px !important;
+}
+
+:host /deep/ sml-input-textarea div.float-group {
+    position: relative;
+    /* padding: 8px 0 2px 0px !important; */
+    height: auto!important;
+}
+
+:host /deep/ .label {
+    text-align: left !important;
+}
+
+:host /deep/ sml-input-select .input-field {
+    width: 100% !important;
+    height: 38px;
+    border-radius: 3px !important
+}
+
+.myblock {
+    display: flex;
+    padding: 0 5px;
+}
+
+
+/* :host /deep/ sml-input-radio .input-field{
+	border:none !important;
+	width: 100% !important
+} */
+
+:host /deep/ sml-input-radio .label {
+    display: none !important;
+}
+
+
+/* :host /deep/ sml-input-radio .radio{
+	padding: 0 !important;
+} */
+
+:host /deep/ sml-input-radio .radio {
+    padding: 10px 6px 0 6px !important;
+}
+
+
+/* :host /deep/ sml-input-radio .input-field{
+	border:none !important;
+	width: 100% !important
+}  */
+
+:host /deep/ sml-input-radio .label {
+    display: none !important;
+}
+
+
+/* :host /deep/ sml-input-radio .radio{
+	padding: 0 !important;
+} */
+
+:host /deep/ sml-input-radio .clabel {
+    top: -8px !important;
+}
+
+:host /deep/ sml-input-radio .vlabel {
+    margin-top: -4px !important;
+    margin-left: 5px !important;
+}
+
+:host /deep/ sml-input-radio .float-group .radio {
+    /* margin-top: 5px!important; */
+}
+
+:host /deep/ sml-input-radio .dis-inline {
+    margin-right: 10px!important;
+}
+
+:host /deep/ sml-notes .notesWrapper {
+    margin-top: 20px;
+    max-width: 100% !important;
+}
+
+:host /deep/ sml-notes .notesTextType {
+    padding: 12px 15px !important;
+}
+
+:host /deep/ sml-notes .head {
+    background-color: #f1f1f1 !important;
+    color: #333;
+    padding: 10px 15px !important;
+    font-size: 19px !important;
+    font-weight: normal !important;
+    display: none;
+}
+
+:host /deep/ sml-notes .label {
+    font-weight: normal !important;
+}
+
+:host /deep/ sml-multifileupload .mt-5 {
+    margin-top: 0 !important
+}
+
+:host /deep/ sml-multifileupload .floating-border {
+    border: none;
+    padding: 0 !important;
+}
+
+:host /deep/ sml-multifileupload .floating-border {
+    font-size: 12px !important
+}
+
+:host /deep/ sml-multifileupload .dropdownarea {
+    height: 45px !important;
+    padding: 4px 15px !important;
+    border: 1px dashed #ccc !important;
+    background-color: #fff !important;
+    border-radius: 3px !important;
+}
+
+:host /deep/ sml-multifileupload .progressContainer {
+    display: none !important;
+}
+
+:host /deep/ sml-multifileupload .uploadicon img {
+    width: 26px;
+}
+
+:host /deep/ sml-multifileupload .col-md-10 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+}
+
+:host /deep/ sml-multifileupload .form-row {
+    margin: 0 !important
+}
+
+:host /deep/ sml-multifileupload .fz14 {
+    text-align: left !important
+}
+
+:host /deep/ sml-multifileupload .procesbar {
+    text-align: left !important
+}
+
+:host /deep/ sml-multifileupload .fz14 {
+    font-weight: normal !important;
+}
+
+:host /deep/ sml-multifileupload .mb-5 {
+    margin-bottom: 0 !important
+}
+
+:host /deep/ sml-buttongroup .mb-5 {
+    margin-bottom: 0 !important
+}
+
+:host /deep/ sml-input-textarea .form-control {
+    /* height: initial !important; */
+}
+
+:host /deep/ sml-input-textarea .float-group {
+    background-color: #fff;
+}
+
+:host /deep/ sml-input-select .select2-container .select2-selection--single {
+    border: none !important;
+    background-color: inherit !important;
+    height: auto !important;
+    margin-top: 3px;
+}
+
+:host /deep/ sml-input-textarea .label,
+:host /deep/ sml-input-select .label,
+:host /deep/ sml-input-numeric .float-group .label {
+    width: initial !important;
+}
+
+:host /deep/ sml-input-numeric .float-group .label {
+    width: 100% !important;
+    text-align: right !important;
+    padding-right: 13px !important;
+}
+
+:host /deep/ sml-input-select .select2-container .select2-selection--single:focus,
+:host /deep/ sml-input-select .showFloat {
+    outline: none
+}
+
+:host /deep/ .listdata {
+    max-width: 100% !important;
+}
+
+:host /deep/ sml-singlefileupload .listdata {
+    max-width: calc(100% - 100px) !important;
+}
+
+.floating-text .form-control {
+    padding: 0 4px !important;
+}
+
+:host /deep/ .float-group {
+    padding-left: 1px !important;
+    padding-right: 1px !important;
+}
+
+:host /deep/ sml-singlefileupload .top5 {
+    font-size: 14px;
+    text-align: left;
+    font-weight: normal;
+}
+
+:host /deep/ sml-singlefileupload .progressContainer {
+    width: 39%;
+}
+
+:host /deep/ sml-singlefileupload .dropdownarea {
+    border-radius: 3px;
+}
+
+:host /deep/ sml-singlefileupload .dropdownarea {
+    height: 50px !important;
+    z-index: 100 !important;
+}
+
+:host /deep/ sml-singlefileupload .fileuploadlist li {
+    margin-bottom: 0 !important;
+}
+
+:host /deep/ sml-singlefileupload .getData {
+    top: 8px !important;
+}
+
+:host /deep/ sml-singlefileupload .listdata {
+    bottom: 14px !important;
+    z-index: 1000 !important;
+}
+
+:host /deep/ sml-input-textarea .form-control:focus+label,
+:host /deep/ sml-input-textarea .form-control:valid+label,
+:host /deep/ sml-input-text .form-control:focus+label,
+:host /deep/ sml-input-text .form-control:valid+label,
+:host /deep/ sml-input-datepicker .form-control:focus+label,
+:host /deep/ sml-input-datepicker .form-control:valid+label,
+:host /deep/ sml-input-numeric .form-control:focus+label,
+:host /deep/ sml-input-numeric .form-control.ng-valid+label {
+    /* font-size: 9px !important; */
+    margin-top: 2px;
+    margin-left: -4px;
+}
+
+ :host /deep/ .form-control+label {
+    /* font-size: 13px !important; */
+}
+
+ :host /deep/ sml-input-select.checkdata .label {
+    /* font-size: 9px !important; */
+}
+
+:host /deep/ sml-input-numeric.disabled .label {
+    top: 22% !important;
+    /* font-size: 9px !important; */
+    font-weight: bold !important;
+    padding: 0 !important;
+}
+
+.wizard {
+    width: 768px;
+    box-shadow: 0px 0px 10px 0px #ccc;
+    padding: 5em 30px;
+    float: left;
+    background-color: #fff;
+    position: relative;
+    z-index: 9;
+}
+
+.sliderarea {
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+
+.slide {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slideList {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.RoundCircle {
+    width: 45px;
+    height: 45px;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-size: 11px;
+    border-radius: 100%;
+    position: relative;
+}
+
+.contentLabel {
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    color: #6da23a;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.slideList:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #f3f3f3;
+    top: 19px;
+    left: 0;
+    z-index: -1;
+    border-top: 1px solid #f3f3f3;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.slideList:first-child:after {
+    width: 50%;
+    left: 50%;
+}
+
+.slideList:last-child:after {
+    width: 50%;
+    right: 50%;
+}
+
+.slideList.slideBg:after,
+.slideBg .RoundCircle {
+    background-color: #6da23a;
+    border-color: #6da23a;
+    color: #fff;
+}
+
+.slideBg+.slideList:not(.slideBg):after {
+    background-color: #c5ced5;
+    border-color: #c5ced5;
+}
+
+.slideBg+.slideList:not(.slideBg) .RoundCircle {
+    background-color: #c5ced5;
+    border-color: #c5ced5;
+}
+
+.auditContent {
+    padding: 10px;
+    background-color: #f3f3f3;
+    font-size: 17px;
+    color: #333;
+    font-weight: bold;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+    float: left;
+    width: 100%
+}
+
+.auditContent span {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.componentArea {
+    width: 100%;
+    float: left;
+    background-color: #fbfbfb;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.audit {
+    font-family: sans-serif!important;
+    color : #6aa138;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.audit, .audit1 {
+    position: absolute;
+    top: 3px;
+    left: 13px;
+    /* font-size: 9px !important; */
+    font-weight: bold;
+}
+
+.audit1 {
+    top: 5px;
+}
+
+.datatablearea {
+    float: left;
+    margin-top: 20px;
+}
+
+.fz18 {
+    font-size: 18px;
+}
+
+.fz14 {
+    font-size: 14px;
+}
+
+.Relative {
+    position: relative;
+}
+
+.myradio {
+    position: relative;
+    top: 2px;
+}
+
+.wizard {
+    width: 768px;
+    box-shadow: 0px 0px 10px 0px #ccc;
+    padding: 5em 30px;
+    float: left;
+}
+
+.sliderarea {
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+
+.slide {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slideList {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.RoundCircle {
+    width: 45px;
+    height: 45px;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-size: 11px;
+    border-radius: 100%;
+    position: relative;
+}
+
+.content {
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    color: #6da23a;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.slideList:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #f3f3f3;
+    top: 19px;
+    left: 0;
+    z-index: -1;
+    border-top: 1px solid #f3f3f3;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.slideList:first-child:after {
+    width: 50%;
+    left: 50%;
+}
+
+.slideList:last-child:after {
+    width: 50%;
+    right: 50%;
+}
+
+.slideList.slideBg:after,
+.slideBg .RoundCircle {
+    background-color: #6da23a;
+    border-color: #6da23a;
+    color: #fff;
+}
+
+.slideBg+.slideList:not(.slideBg):after {
+    background-color: #c5ced5;
+    border-color: #c5ced5;
+}
+
+.slideBg+.slideList:not(.slideBg) .RoundCircle {
+    background-color: #c5ced5;
+    border-color: #c5ced5;
+}
+
+.auditContent {
+    padding: 10px;
+    background-color: #f3f3f3;
+    font-size: 17px;
+    color: #333;
+    font-weight: bold;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+    float: left;
+    width: 100%
+}
+
+.auditContent span {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.componentArea {
+    width: 100%;
+    float: left;
+    background-color: #fbfbfb;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.headerTab {
+    background-color: #fcfcfc;
+    padding: 10px;
+    border-radius: 3px;
+    width: 100%;
+    float: left;
+}
+
+.headerTab ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    float: left;
+}
+
+.headerTab ul li {
+    margin: 0;
+    padding: 5px 10px;
+    display: inline-block;
+    list-style: none;
+    font-size: 15px;
+}
+
+.lightbg {
+    background: #fbfbfb;
+    border-radius: 3px;
+}
+
+.mypading {
+    padding: 10px;
+}
+
+.myblockSecond {
+    width: 100%;
+    display: flex;
+}
+
+.reval {
+    position: relative;
+    top: 16px;
+    left: 10px
+}
+
+.relative {
+    position: relative;
+}
+
+.listdata[_ngcontent-c14] {
+    width: 100%;
+    max-width: calc(100% - 100px) !important;
+    position: absolute;
+    bottom: 12px;
+    left: 77px;
+    background-color: #fff;
+    z-index: 9999999;
+}
+
+.reasionPopup {
+    cursor: pointer;
+    position: absolute;
+    top:9px;
+    right: 32px;
+    width: 20px;
+    height: 20px;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showPopup {
+    position: fixed;
+    padding: 10px;
+    background: #fff;
+    width: 600px;
+    z-index: 1000;
+    top: 50%;
+    /* min-height: 200px; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.showPopupNewClaim{
+    position: fixed;
+    top: 25px;
+    background: #fff;
+    width: 768px;
+    z-index: 30;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 200px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.btnArea {
+    float: right;
+    width: 200px !important;
+    padding: 10px 0;
+}
+
+.mar-l-5 {
+    margin-left: 5px;
+}
+
+.dropdown-item {
+    cursor: pointer;
+}
+
+.btext {
+    color: #6ba238;
+}
+
+.btext:hover {
+    color: #a3d45d;
+}
+
+span.green {
+    font-family: Arial;
+    background: #6ba238;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    color: #ffffff;
+    display: inline-block;
+    line-height: 1.7em;
+    margin-right: 15px;
+    text-align: center;
+    width: 1.6em;    
+    font-size: 0.8em;
+    margin: 0px 0px 0px 5px;
+}
+
+span.red {
+    font-family: Arial;
+    background: #dc3545;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    color: #ffffff;
+    display: inline-block;
+    line-height: 1.7em;
+    margin-right: 15px;
+    text-align: center;
+    width: 1.6em;    
+    font-size: 1em;
+    margin: 0px 0px 0px 5px;
+    cursor: pointer;
+}
+
+/****************************************COMPONENT ACTIONS*/
+.containerActions {
+    width: 100%;
+    background-color: #fbfbfb;
+}
+
+.actionsList {
+    padding: 10px 10px;
+}
+
+.liRed {
+    background-color: #fdeaeb;
+    margin-bottom: 12px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    list-style: none;
+    display:inline-block;
+    *display:inline; /*IE7*/
+    *zoom:1; /*IE7*/
+    width: 100%;
+}
+
+.userImgA {
+    width: 40px;
+    float: left;
+}
+
+.avatarA {
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    display: inline-block;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.notesInfoA {
+    width: 150px;
+    float: left;
+    border-right: 2px solid #dee2e6;
+    margin-right: 10px;
+}
+
+.notesA {
+    width: calc(100% - 200px);
+    float: left
+}
+
+.userNameA, .noteTimeA, .notesMessageA {
+    --font-family-sans-serif: "-apple-system","BlinkMacSystemFont","Segoe UI","Roboto","Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.userNameA {
+    width: 100%;
+    font-size: 11px;
+    color: #212529;
+    margin-bottom: 0px;
+}
+
+.noteTimeA {
+    width: 100%;
+    font-size: 11px;
+    color: #90b264;
+    margin-bottom: 0px;
+}
+
+.notesMessageA {
+    font-size: 14px;
+    color: #212529;
+}
+
+:host /deep/ .float-group .checkbox {
+    /* padding-top: 0px!important;
+    margin-top: 0px!important; */
+}
+
+.popupBody {
+    height: 380px;
+    border-top: 1px solid #6c757d;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.popupFoot {
+    border-top: 1px solid #6c757d;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.taskArea {
+    background-color: #fbfbfb;
+    margin: 10px 0px;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.taskBody {
+    background-color: #eaffcc;
+}
+
+.titleGroupTasks {
+    font-size: 18px;
+}
+
+.plusGroup {
+    margin-left: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.openTasks {
+    color : #6ba238!important;
+    margin-left: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.mt-07 {
+    margin-top: 7px;
+}
+
+:host /deep/ .select2-container--default .select2-results>.select2-results__options {
+    font-size: 12px;
+}
+
+.label1:before {
+    background-color: red;
+}
+
+:host /deep/ .fa-plus:before {
+    color: #6ba238;
+}
+
+:host /deep/ sml-button i.fa-plus:before {
+    color: #ffffff;
+}
+
+:host /deep/ .card {
+    border: none;
+}
+
+:host /deep/ .card-header {
+    background-color: rgba(0,0,0,.09);
+}
+
+.alert-vat {
+    background-color: #f1f1f1;
+}
+
+.titleBodyChanges {
+    font-weight: 700;
+    color: darkgrey;
+}
+
+.w100 {
+    width: 100px!important;
+}
+
+.w105 {
+    width: 105px;
+}
+
+.w300 {
+    width: 300px;
+}
+
+:host /deep/ .dropdown-toggle {
+    border-radius: .25rem!important;
+}
+
+.textTasks {
+    font-size: 18px;
+}
+
+.checkedTask {
+    font-size : 24px;
+    color : #6ba238!important;
+}
+
+.popupTasks {
+    width: 800px;
+    height: 500px;
+}
+
+:host /deep/ .ng-select.ng-select-single .ng-select-container {
+    margin-top: -3px;
+}
+
+:host /deep/ .ng-select .ng-clear-wrapper {
+    display: none;
+}
+
+:host /deep/ .nav-tabs {
+    -webkit-flex-wrap: nowrap!important;
+    -ms-flex-wrap: nowrap!important;
+    flex-wrap: nowrap!important;
+    display:flex;
+    -webkit-box-orient: horizontal!important;
+    -webkit-box-direction: normal!important;
+    -webkit-flex-direction: row!important;
+    -ms-flex-direction: row!important;
+    flex-direction: row!important;
+}
+
+.textLabel {
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #6aa138;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+:host /deep/ sml-input-checkbox div.float-group {
+    padding-top: 5px!important;
+}
+
+:host /deep/ sml-input-checkbox .vlabel {
+    margin-top: 0px !important;    
+    margin-left: 5px !important;
+}
+
+:host /deep/ .switch-medium {
+    /* background-color: rgb(249, 73, 73); */
+}
+
+.wd1{ 
+    width: 10%;
+}
+
+:host /deep/ button:focus {outline:0;}
+
+:host /deep/ .vatOuter {
+    cursor: pointer;
+}
+
+:host /deep/ .h45 {
+    height: 45px;
+}
+
+.dropdown-toggle-after {
+    z-index: 10 !important;
+}
+
+
+.sml-input {
+    --checkbox-width:18px; --checkbox-height:18px; --checkbox-border-width:0px; --checkbox-border-radius:4px; --checkbox-border-color:#D5DBE0; --checkbox-background-checked:#6aa138; --checkbox-background-unchecked:#D5DBE0; --check-color:#ffffff; --checkbox-tick-size:9px; --c-width:100%; --c-height:25px; --label-left:4px; --label-top:3px; --value-left:9px; --value-top:7px;
+}

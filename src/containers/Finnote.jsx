@@ -2,8 +2,17 @@ import React, { useState, useEffect } from 'react';
 import { Dropdown } from 'react-bootstrap';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 import { todayDate } from '../shared/functions';
+
+import SwiperCore, {
+    Navigation
+} from 'swiper/core';
+
+import "swiper/swiper.min.css";
+import "swiper/components/navigation/navigation.min.css"
+import "../styles/components/swiper.css";
 
 import '../styles/components/Finnote.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -17,18 +26,53 @@ let tasks = [];
 const tasksArray = [];
 
 const Finnote = () => {
+    SwiperCore.use([Navigation]);
 
     // Data
     const [finnote, setFinnote] = useState([]);
-    
+
+    // Status description
+    const [statusDescription, setStatusDescription] = useState();
+
     let param = useParams();
     // console.log(id);
     useEffect(() => {
         fetch(`https://apps.abacuscrm.net/api/Models/FINNOTE/${param.id}?api_key=c606995afe964a17bc298eda26badc40c606995afe964a17bc298eda26badc40`)
         .then(response => response.json())
         .then(data => setFinnote(data))
-    }, []);
+        .then(handleStatusDescription(finnote.StatusDescription))
 
+    }, [finnote.StatusDescription]);
+
+
+    function handleStatusDescription(status) {
+        switch (status) {
+            case 'Notice of Acceptance Received from Finance Company':
+                setStatusDescription(<Swiper navigation={true} className="mySwiper">
+                        <SwiperSlide>
+                            <li><a href=""><span> Enter Finance Contract De ... </span></a></li>
+                            <li><a href=""><span> Pre-Notice Process Initia ... </span></a></li>
+                            <li><a href=""><span> Signed Contract Received  ... </span></a></li>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <li><a href=""><span> Contract Sent To Finance  ...   ... </span></a></li>
+                            <li className="selected"><a href=""><span> Notice of Acceptance Rece ... </span></a></li>
+                        </SwiperSlide>
+                    </Swiper>)
+                break;
+            case 'Contract Sent To Finance Company':
+                setStatusDescription(<>
+                            <li><a href=""><span> Enter Finance Contract De ... </span></a></li>
+                            <li><a href=""><span> Pre-Notice Process Initia ... </span></a></li>
+                            <li><a href=""><span> Signed Contract Received  ... </span></a></li>
+                            <li className="selected"><a href=""><span> Notice of Acceptance Rece ... </span></a></li>
+                        </>
+                        )
+                break;
+            default:
+                break;
+        }
+    }
     console.log(finnote);
 
     // Modal
@@ -45,7 +89,7 @@ const Finnote = () => {
             return '';
         });
     }
-    
+
     let contentOpenTasks = (<div className="actived tab-pane">
         <div className="container overflow-auto">
             <div className="row taskArea">
@@ -98,7 +142,6 @@ const Finnote = () => {
             </div>
         </div>
     </div>)
-
     let contentActions = (<div className="containerActions">
         <ul className="actionsList">
             <li className="liRed">
@@ -131,8 +174,7 @@ const Finnote = () => {
             <div className="hr"></div>
         </div>
     </div>);
-    let contentDocument = (
-        <div>
+    let contentDocument = (<div>
             <div className="newGroupAction_row2">
                 <div className="assign-data">
                 <label>Assigned To</label>
@@ -148,8 +190,7 @@ const Finnote = () => {
                 <input type="file" class="custom-file-input" id="customFile" />
                 <label class="custom-file-label" for="customFile">Choose a file or drag it here</label>
             </div>
-        </div>
-    );
+        </div>);
     let contentChangesLog = (<div className="container pt-3" style={{height: "400px"}}>
         <div className="table-100 tableChanges">
             <table className="table table-bordered h-auto" style={{width: "510px", maxHeight: "200px"}}>
@@ -178,6 +219,8 @@ const Finnote = () => {
     const [containerContent, setContainerContent] = useState(contentOpenTasks);
     const [actived, setActived] = useState(['active', '', '', '', '']);
     // console.log(actived);
+
+    // UseEffect for navbar col-2 (open tasks, actions, ....)
     useEffect(() => {
         // Actualiza el título del documento usando la API del navegador
         switch (navLink) {
@@ -204,14 +247,42 @@ const Finnote = () => {
             default:
                 break;
         }
-        
+
     }, [navLink]);
-    
+
+    console.log('====================================');
+    console.log(finnote.StatusDescription);
+    console.log('====================================');
+
+    // useEffect(()=> {
+    //     switch (finnote.StatusDescription) {
+    //         case 'Notice of Acceptance Received from Finance Company':
+    //             setStatusDescription(<Swiper navigation={true} className="mySwiper">
+    //                     <SwiperSlide>
+    //                         <li><a href=""><span> Enter Finance Contract De ... </span></a></li>
+    //                         <li><a href=""><span> Pre-Notice Process Initia ... </span></a></li>
+    //                         <li><a href=""><span> Signed Contract Received  ... </span></a></li>
+    //                     </SwiperSlide>
+    //                     <SwiperSlide>
+    //                         <li><a href=""><span> Contract Sent To Finance  ...   ... </span></a></li>
+    //                         <li className="selected"><a href=""><span> Notice of Acceptance Rece ... </span></a></li>
+    //                     </SwiperSlide>
+    //                 </Swiper>)
+    //             break;
+    //         case 'Contract Sent To Finance Company':
+    //             setStatusDescription('dsadsa');
+    //             break;
+    //         default:
+    //             break;
+    //     }
+
+    // }, [statusDescription])
     // console.log(actived);
-    
+
     return (
         <div className="Finnote">
             <div className="row">
+
                 <div className="col-md-12 d-flex align-items-center mb-3">
                     <b className="mainHeadingh">
                         Notice (ID {finnote.FinnoteId})
@@ -252,11 +323,8 @@ const Finnote = () => {
                         <div className="float-left mb-3">
                             <div className="breadcrumps">
                                 <ul className="breadcrumb">
-                                    <li><a href="/#"><span> Enter Finance Contract De ... </span></a></li>
-                                    <li><a href="/#"><span> Pre-Notice Process Initia ... </span></a></li>
-                                    <li><a href="/#"><span> Signed Contract Received  ... </span></a></li>
-                                    <li><a href="/#"><span> Contract Sent To Finance  ...   ... </span></a></li>
-                                    <li className="selected"><a href="/#"><span> Notice of Acceptance Rece ... </span></a></li>
+                                    {statusDescription}
+
                                 </ul>
                             </div>
                         </div>
@@ -290,19 +358,53 @@ const Finnote = () => {
                                     <label className="label" style={{fontFamily: "sans-serif", fontSize: "10px", fontWeight: "bold", color: "rgb(106, 161, 56)", marginLeft: "4px"}}> Quote No. </label>
                                 </div>
                             </div> */}
-                            
+
                             <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6 myCol mt-2 financeInf-data">
                                 <p className="financeInf-label">Quote No.</p>
-                                <p className="financeInf-content">{finnote.QuoteNo}</p>
+                                <input type="text" defaultValue={finnote.QuoteNo} />
+                                {/* <p className="financeInf-content">{finnote.QuoteNo}</p> */}
                             </div>
                             <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6 myCol mt-2 financeInf-data">
                                 <p className="financeInf-label">Contract Number</p>
-                                <p className="financeInf-content">{finnote.FinanceContractNo}</p>
+                                <input type="text" defaultValue={finnote.FinanceContractNo} />
+                                {/* <p className="financeInf-content">{finnote.FinanceContractNo}</p> */}
                             </div>
                             <div className="col-xl-5 col-lg-6 col-md-12 col-sm-12 myCol mt-2 financeInf-data">
                                 <p className="financeInf-label">Program</p>
-                                <p className="financeInf-content">{finnote.FinanceContractNo}</p>
+                                <input type="text" defaultValue={finnote.FinanceContractNo} />
+                                {/* <p className="financeInf-content">{finnote.FinanceContractNo}</p> */}
                             </div>
+                            <div className="col-xl-6 col-lg-6 col-md-9 col-sm-12 myCol mt-2 financeInf-data">
+                                <p className="financeInf-label">Program</p>
+                                <input type="text" defaultValue="Personal Articles Floater" />
+                                {/* <p className="financeInf-content">Personal Articles Floater</p> */}
+                            </div>
+                            <div className="col-xl-2 col-lg-2 col-md-2 col-sm-12 myCol mt-2 financeInf-data">
+                                <p className="financeInf-label">State</p>
+                                <input type="text" defaultValue="FL" />
+                                {/* <p className="financeInf-content">FL</p> */}
+                            </div>
+                            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-12 myCol mt-2 financeInf-data">
+                                <p className="financeInf-label">Policy Effective Date</p>
+                                <input type="text" defaultValue="06/23/2021" />
+                                {/* <p className="financeInf-content">06/23/2021</p> */}
+                            </div>
+                            <div className="col-xl-4 col-lg-5 col-md-6 col-sm-6 myCol mt-2 financeInf-data">
+                                <p className="financeInf-label">Firm</p>
+                                <input type="text" defaultValue="0296 - API Group" />
+                                {/* <p className="financeInf-content">0296 - API Group</p> */}
+                            </div>
+                            <div className="col-md-1 float-left">
+                                +
+                            </div>
+                            <div className="col-xl-4 col-lg-5 col-md-6 col-sm-6 myCol mt-2 financeInf-data">
+                                <p className="financeInf-label">Firm Contact</p>
+                                <p className="financeInf-content">Teaa Peeples</p>
+                            </div>
+                            <div className="col-md-1 float-left button">
+                                +
+                            </div>
+
                         </div>
 
                     </section>
